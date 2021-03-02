@@ -1,4 +1,114 @@
-body{
-border: 0;
-padding: 0;
+/*1ere partie */
+.header{
+    display: flex;
+    justify-content: center;
+}
+.localisation{
+    display: flex;
+    justify-content: center;
+    background: gray;
+    font-size: larger;
+}
+.réservez{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titre-réservez{
+    font-size: xx-large;
+}
+.text-réservez{
+    font-size: x-large;
+}
+.buttom-réservez{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttom-text{
+    border-bottom-right-radius:43px;
+    border-bottom-left-radius:43px;
+    border-top-right-radius: 43px;
+    border-top-left-radius: 43px;
+    background: #bd28eb;
+    width: 50%;
+    height: 60px;
+    color: white;
+}
+/*2eme partie*/
+.fonctionnement{
+    width: 100%;
+}
+.titre-fonctionnement{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.fonctionnement-B{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.fonctionnement-B-1{
+    border-bottom-right-radius:43px;
+    border-bottom-left-radius:43px;
+    border-top-right-radius: 43px;
+    border-top-left-radius: 43px;
+    background: #e5e2e5;
+    width: 50%;
+    height: 60px;
+    color: black;
+}
+
+
+
+
+
+.Restaurant-contener{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.restaurant{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.restaurant img{
+    width: 55em;
+    height: 25em;
+    border-top-left-radius: 43px;
+    border-top-right-radius: 43px;
+   
+}
+
+.text-restaurants{
+    width: 91%;
+    border-bottom-left-radius: 43px;
+    border-bottom-right-radius: 43px;
+    background: rgb(124, 124, 124);
+    margin-bottom: 30px;
+}
+.restaurant .nouveau{
+    position: absolute;
+   
+    background: rgb(104, 211, 211);
+    font-size: 1.5em;
+    width: 3.6em;
+    height: 2.5em;
+}
+
+.text-gras{
+    font-size: x-large;
+}
+
+.text-simple{
+    font-size: medium;
+}
+
+h5{
+    font-size: 3em;
+    margin: 0.2em;
 }
