@@ -1,0 +1,26 @@
+.taille-button{
+    width: 90%;
+    margin: .5em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    height: 45px;
+    border: 1px solid black;
+}
+.taille-b-commande{
+    width: 40%;
+    border-radius: 20%;
+    height: 5em;
+
+
+}
+.taille{
+    width: 100%;
+}
+.button{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}

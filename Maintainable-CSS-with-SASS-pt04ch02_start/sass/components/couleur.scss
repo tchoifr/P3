@@ -1,0 +1,21 @@
+$colour-primary: #a31fa3;
+$colour-secondary: #333232;
+$colour-accent: #58e7c4;
+$colour-white: #fff;
+$colour-invalid: #DB464B;
+
+.container-footer{
+    background:$colour-secondary;
+}
+.blanc{
+    color: $colour-white;
+}
+.colour-p{
+    background: $colour-primary;
+}
+.position{
+    background: $colour-white;
+}
+section{
+    background: $colour-white;
+}
