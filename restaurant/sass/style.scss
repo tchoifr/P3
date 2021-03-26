@@ -1,0 +1,46 @@
+.container-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .logo{
+        width: 50%;
+    }
+    
+    .container-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    
+    }
+    
+}
+img{
+    
+        width: 100%;
+        
+    }
+.margin-top{
+    display: flex;
+    align-items: baseline;
+    margin-top: -31px;
+    background: white;
+    position: relative;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 65px;
+    justify-content: space-around;
+    .text-haut{
+    margin: 1px;
+    font-size: 2.5em;
+    }
+}
+.titre-gras{
+    width: 15%;
+    font-size: 2em;
+    margin: 5px;
+    cursor: progress;
+    &:hover{
+        border-bottom: solid aqua;
+    }
+     
+}

@@ -1,3 +1,108 @@
+.container-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-img .logo {
+  width: 50%;
+}
+.container-img .container-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 
+img {
+  width: 100%;
+}
+
+.margin-top {
+  display: flex;
+  align-items: baseline;
+  margin-top: -31px;
+  background: white;
+  position: relative;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  height: 65px;
+  justify-content: space-around;
+}
+.margin-top .text-haut {
+  margin: 1px;
+  font-size: 2.5em;
+}
+
+.titre-gras {
+  width: 15%;
+  font-size: 2em;
+  margin: 5px;
+  cursor: progress;
+}
+.titre-gras:hover {
+  border-bottom: solid aqua;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.bloc-responsive {
+  width: 90%;
+  margin: 10px;
+}
+
+.responsive-taille {
+  width: 90%;
+  margin: 0.5em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  height: 70px;
+  background: #00b7ff;
+}
+
+.taille-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0.5em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  height: 70px;
+  border: 1px solid black;
+  background: white;
+  cursor: pointer;
+}
+.taille-button:hover {
+  width: 75%;
+}
+.taille-button .text-gras {
+  margin: 5px;
+  font-size: 1.1em;
+}
+.taille-button .text {
+  margin: 5px;
+  font-size: 1em;
+}
+
+.bloc-euro {
+  width: 4em;
+}
+
+.euro {
+  margin-right: 1em;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
 /*# sourceMappingURL=style2.css.map */
