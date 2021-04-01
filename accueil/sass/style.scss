@@ -64,19 +64,16 @@ width: 100%;
             display: flex;
             justify-content: center;
     margin-left: -4px;
-    border: 1px solid rgb(119, 0, 255);
+    border: 1px solid #9356DC;
     width: 15px;
     font-size: 1.1em;
     border-radius: 15px;
     height: 17px;
         }
         .icon{
-            color: gray;
             margin-left: 20px;
-            
-            cursor: pointer;
             &:hover {
-                color: rgb(119, 0, 255) ;
+                color: #9356DC ;
         }
 
         }
