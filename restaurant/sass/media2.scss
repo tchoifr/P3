@@ -6,7 +6,7 @@
         width: 50%;
     }
    }
- }
+
  .media-titre{
     display: flex;
     justify-content: center;
@@ -22,4 +22,15 @@
  }
  .footer-media{
      display: flex;
+ }
+ .container-header{
+    display: flex;
+    align-items: center;
+     .img-forme{
+         width: 100%;
+     }
+ }
+ .button{
+     margin: 10px;
+ }
  }

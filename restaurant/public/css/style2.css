@@ -1,3 +1,7 @@
+h3 {
+  margin: 0;
+}
+
 .container-img {
   display: flex;
   flex-direction: column;
@@ -58,19 +62,9 @@ img {
   margin: 1px;
   font-size: 1.5em;
 }
-.margin-top .icon-container .icon-click {
-  order: 2;
-}
-.margin-top .icon-container .icon-click:hover {
-  order: 1;
-  color: #9356DC, #FF79DA;
-}
-.margin-top .icon-container .icon-coeur {
-  display: block;
-  order: 1;
-}
 .margin-top .icon-container .icon-coeur:hover {
-  order: 2;
+  font-weight: 900;
+  color: #9356DC;
 }
 
 .titre-gras {
@@ -79,7 +73,7 @@ img {
   margin: 5px;
 }
 .titre-gras:hover {
-  border-bottom: solid aqua;
+  border-bottom: solid #99E2D0;
 }
 
 .bloc-footer {
@@ -120,7 +114,8 @@ img {
   width: 55%;
   border-radius: 25px;
   transition: transform 500ms;
-  background-image: linear-gradient(180deg, #ff00dd, #8400ff);
+  background-image: linear-gradient(330deg, #9356DC, #FF79DA);
+  border: 0;
   /*transition-property: transform;
   transition-duration: 400ms;*/
 }
@@ -145,6 +140,7 @@ img {
   display: flex;
   margin-top: 20px;
   flex-direction: column;
+  font-size: 15px;
 }
 .container-media .bloc {
   background-color: #99E2D0;
@@ -159,6 +155,10 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
+}
+.container-media .bloc:hover {
+  font-size: 13px;
+  transition: 600ms;
 }
 .container-media .bloc .icon {
   position: relative;
@@ -208,24 +208,37 @@ img {
   .header .container-img {
     width: 50%;
   }
-}
-.media-titre {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.media-titre .margin-top {
-  width: 50%;
-}
 
-.container-media {
-  display: flex;
-  margin-top: 20px;
-  flex-direction: row;
-}
+  .media-titre {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .media-titre .margin-top {
+    width: 50%;
+  }
 
-.footer-media {
-  display: flex;
+  .container-media {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+  }
+
+  .footer-media {
+    display: flex;
+  }
+
+  .container-header {
+    display: flex;
+    align-items: center;
+  }
+  .container-header .img-forme {
+    width: 100%;
+  }
+
+  .button {
+    margin: 10px;
+  }
 }
 
 /*# sourceMappingURL=style2.css.map */

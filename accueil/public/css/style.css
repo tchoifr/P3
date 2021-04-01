@@ -40,10 +40,6 @@ p {
   font-size: 1.5em;
 }
 
-.coeur-bloc {
-  margin-right: 20px;
-}
-
 .header-logo {
   width: 100%;
   display: flex;
@@ -88,7 +84,9 @@ p {
   /*transition-property: transform;
   transition-duration: 400ms;*/
   transition: transform 400ms;
-  cursor: pointer;
+  background-image: linear-gradient(330deg, #9356DC, #FF79DA);
+  border: 0;
+  color: white;
 }
 .container1 .button .bouton:hover {
   transform: scale(1.15);
@@ -106,7 +104,10 @@ p {
   border-radius: 25px;
   box-shadow: 1px 1px 1px 1px #dddddd;
   margin-bottom: 20px;
-  cursor: pointer;
+}
+.container2 .fonctionnement:active + .icon {
+  color: #9356DC;
+  transform: scale(1.15);
 }
 .container2 .fonctionnement .chiffre {
   display: flex;
@@ -117,12 +118,6 @@ p {
   font-size: 1.1em;
   border-radius: 15px;
   height: 17px;
-}
-.container2 .fonctionnement .icon {
-  margin-left: 20px;
-}
-.container2 .fonctionnement .icon:hover {
-  color: #9356DC;
 }
 .container2 .fonctionnement .text-fonctionnement {
   margin-left: 40px;
@@ -151,6 +146,18 @@ p {
   box-shadow: 1px 1px 1px grey;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+.coeur-bloc {
+  margin-right: 30px;
+}
+.coeur-bloc:hover {
+  font-weight: 900;
+  color: #9356DC;
+}
+.coeur-bloc .icon-coeur:hover {
+  font-weight: 900;
+  color: #9356DC;
 }
 
 .bloc-footer {
@@ -193,7 +200,7 @@ p {
   }
 
   .container3 {
-    width: 100%;
+    width: 90%;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -209,6 +216,7 @@ p {
     justify-content: center;
     display: flex;
     border-radius: 20px;
+    margin-bottom: 10px;
   }
 }
 
