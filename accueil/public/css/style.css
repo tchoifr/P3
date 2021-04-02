@@ -183,7 +183,7 @@ p {
   display: flex;
   align-items: baseline;
   color: white;
-  margin: -5px;
+  margin: 0px;
 }
 .bloc-footer .footer-media .text-footer {
   color: white;
