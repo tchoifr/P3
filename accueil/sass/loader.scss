@@ -28,7 +28,7 @@
       color: #99E2D0;
       text-shadow: 0 0 7px #99E2D0; }
     70% {
-      color: #8a8a8a;
+      color: #9356DC;
       text-shadow: none; }
     100% {
       color: #99E2D0;
@@ -46,7 +46,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-image: linear-gradient(to bottom, #9356DC, #FF79DA, #FF79DA, #9356DC);
+      
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: cover;
@@ -56,7 +56,7 @@
       transform: scale(0); }
   
     .lettre {
-      color: #99E2D0;
+      
       font-size: 80px;
       letter-spacing: 10px;
       margin-bottom: 0px;
@@ -89,15 +89,15 @@
     
     
     }
-    @media screen and (min-width: 320px) and (max-width:1010px){
+    @media screen and (min-width: 430px) and (max-width:770px){
         .loader {
             
-            width: 95%;
+            width: 98%;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: linear-gradient(to bottom, #9356DC, #FF79DA, #FF79DA, #9356DC);
+        
             background-size: 100%;
             background-repeat: no-repeat;
             
@@ -140,6 +140,61 @@
 
 
     }
+    @media screen and (min-width: 310px) and (max-width:430px){
+      .loader {
+          
+          width: 95%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      
+          background-size: 100%;
+          background-repeat: no-repeat;
+          
+          z-index: 1;
+          position: fixed;
+          animation: loader 2s ease-in;
+          transform: scale(0); }
+      
+        .lettre {
+          color: #99E2D0;
+          font-size: 80%;
+          letter-spacing: 10px;
+          margin-bottom: 0px;
+          animation: flash 1.2s linear infinite;
+          font-family: 'shrikhandregular', sans-serif; }
+      
+        .lettre:nth-child(1) {
+          animation-delay: 0.1s; }
+      
+        .lettre:nth-child(2) {
+          animation-delay: 0.2s; }
+      
+        .lettre:nth-child(3) {
+          animation-delay: 0.3s; }
+      
+        .lettre:nth-child(4) {
+          animation-delay: 0.4s; }
+      
+        .lettre:nth-child(5) {
+          animation-delay: 0.5s; }
+      
+        .lettre:nth-child(6) {
+          animation-delay: 0.6s; }
+      
+        .lettre:nth-child(7) {
+          animation-delay: 0.7s; }
+      
+        .lettre:nth-child(8) {
+          animation-delay: 0.8s; }
+
+
+  }
+
+
+
+
     .fonctionnement {
       animation: fonctionnement 2s forwards;
   }

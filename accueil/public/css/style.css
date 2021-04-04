@@ -17,7 +17,6 @@
 
 .titre-text {
   background: #99E2D0;
-  color: green;
 }
 
 .text-gras {
@@ -29,6 +28,13 @@
 }
 .fonctionnement:hover {
   background: #f7f1fd;
+}
+
+.loader {
+  background-image: linear-gradient(to bottom, #dfdfdf, #99E2D0);
+}
+.loader .lettre {
+  color: #99E2D0;
 }
 
 p {
@@ -179,8 +185,6 @@ a {
 .bloc-footer {
   margin-top: 50px;
   background: #2c2c2c;
-  display: flex;
-  justify-content: flex-start;
 }
 .bloc-footer .footer-media {
   display: flex;
@@ -188,26 +192,33 @@ a {
   flex-direction: column;
   margin-left: 10px;
 }
-.bloc-footer .footer-media .logo-footer {
-  width: 100px;
-  margin-bottom: 30px;
-  color: white;
-  height: 25px;
-  font-size: 2em;
-}
-.bloc-footer .footer-media .logo-footer .logo-media {
-  filter: invert(1);
-}
-.bloc-footer .footer-media .icon-footer {
+.bloc-footer .footer-media .section-text-footer {
   display: flex;
-  align-items: baseline;
-  color: white;
-  margin: 0px;
 }
-.bloc-footer .footer-media .text-footer {
-  color: white;
-  margin-left: 10px;
-  margin-top: -15px;
+.bloc-footer .footer-media .section-text-footer .bloc-icon-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bloc-footer .footer-media .section-text-footer .bloc-icon-footer .icon-footer {
+  margin: 10px;
+  color: #ffffff;
+}
+.bloc-footer .footer-media .section-text-footer .bloc-text-footer {
+  display: flex;
+  flex-direction: column;
+}
+.bloc-footer .footer-media .section-text-footer .bloc-text-footer .text-footer {
+  color: #ffffff;
+}
+.bloc-footer .footer-media .bloc-text-footer .text-footer {
+  color: #ffffff;
+  font-family: "shrikhandregular", sans-serif;
+}
+.bloc-footer .footer-media .titre-footer {
+  color: #ffffff;
+  font-size: 2em;
+  font-family: "shrikhandregular", sans-serif;
 }
 
 @media screen and (min-width: 770px) and (max-width: 2560px) {
@@ -327,7 +338,7 @@ a {
     text-shadow: 0 0 7px #99E2D0;
   }
   70% {
-    color: #8a8a8a;
+    color: #9356DC;
     text-shadow: none;
   }
   100% {
@@ -348,7 +359,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, #9356DC, #FF79DA, #FF79DA, #9356DC);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: cover;
@@ -359,7 +369,6 @@ a {
   }
 
   .lettre {
-    color: #99E2D0;
     font-size: 80px;
     letter-spacing: 10px;
     margin-bottom: 0px;
@@ -399,14 +408,69 @@ a {
     animation-delay: 0.8s;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 1010px) {
+@media screen and (min-width: 430px) and (max-width: 770px) {
+  .loader {
+    width: 98%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: fixed;
+    animation: loader 2s ease-in;
+    transform: scale(0);
+  }
+
+  .lettre {
+    color: #99E2D0;
+    font-size: 80%;
+    letter-spacing: 10px;
+    margin-bottom: 0px;
+    animation: flash 1.2s linear infinite;
+    font-family: "shrikhandregular", sans-serif;
+  }
+
+  .lettre:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  .lettre:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .lettre:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .lettre:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+
+  .lettre:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+
+  .lettre:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+
+  .lettre:nth-child(7) {
+    animation-delay: 0.7s;
+  }
+
+  .lettre:nth-child(8) {
+    animation-delay: 0.8s;
+  }
+}
+@media screen and (min-width: 310px) and (max-width: 430px) {
   .loader {
     width: 95%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, #9356DC, #FF79DA, #FF79DA, #9356DC);
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 1;
