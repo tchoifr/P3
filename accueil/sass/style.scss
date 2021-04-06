@@ -45,11 +45,12 @@
         /*transition-property: transform;
         transition-duration: 400ms;*/
         transition: transform 400ms;
-        background-image: linear-gradient(330deg, #9356DC, #FF79DA);
+        
             border: 0;
             color: white;
 
         &:hover {
+           
             transform: scale(1.15);
     }
     }

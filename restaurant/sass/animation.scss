@@ -5,7 +5,7 @@
 @keyframes bloc{
 0% {
      opacity: 0;
-     transform: translateY(80px);
+     transform: translateY(28%);
       
 }
 100% {
@@ -27,6 +27,22 @@
 .bloc:nth-child(4) { 
   animation-delay: 0.9s;
  }
+ .icon {
+  animation:icon 1s forwards;
+}
+@keyframes icon{
+  0% {
+       opacity: 0;
+       transform: rotateX(360);
+        
+  }
+  100% {
+     opacity: 1;
+      
+      transform:rotateX(0) ;
+      
+      }
+  }
 /*
 $animation: bloc 2s cubic-bezier(0.64, 0, 0.78, 0) 0ms 1 alternate both;
 @keyframes bloc {

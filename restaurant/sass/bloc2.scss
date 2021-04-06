@@ -15,7 +15,7 @@
     margin-top: 20px;
     flex-direction: column;
 .bloc {
-    background-color: #99E2D0;
+    
     width: 95%;
     height: 80px;
     display: flex;
@@ -28,21 +28,39 @@
     text-overflow: ellipsis;
     white-space: normal;
     &:hover{
-      font-size: 13px;
+     
       transition: 600ms;
     } 
   }
     .bloc .icon {
         position: relative;
+        background-color: #99E2D0;
         order: 2;
-        right: -25px;
-        top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 1.5em;
-        width: 0px; }
+        width: 30%;
+        margin-right: -30%;
+        
+        &:hover{
+         display: block;
+         margin-right: -5px;
+
+
+        }
+         }
       .bloc .icon span {
-        display: block;
+        display: initial;
        color: white;
-        transition: transform 10000ms ease-in-out; }
+        transition: transform 10000ms ease-in-out;
+        &:hover{
+          display: block;
+          opacity: 1;
+          
+        }
+      
+      }
         
     .bloc .texte {
       width: 100%;
@@ -53,18 +71,21 @@
       padding: 10px 20px 10px 10px;
       order: 1;
       transition: width 500ms;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: normal; }
-      .bloc .texte:hover {
-        width: 74%;
+      white-space: normal; 
+        &:hover{
+        width: 70%;
+        text-overflow: ellipsis;
+        
+      
+      }
+
         
      }
       .bloc .texte .prix {
         width: 30px;
         padding-top: 25px;
         white-space: nowrap;
-        margin-left: 10px; }
+         }
       .bloc .texte .menu {
         white-space: nowrap;
         overflow: hidden; }

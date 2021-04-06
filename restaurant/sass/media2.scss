@@ -1,5 +1,8 @@
 @media screen and (min-width: 770px) and (max-width:2560px){
-   .header{
+   h3{
+       font-size: 1.5em;
+   }
+    .header{
     display: flex;
     justify-content: center;
     .container-img{
@@ -41,13 +44,4 @@
      }
  }
  }
- @media screen and (max-width: 330px) {
 
-h3{
-    font-size: 1em;
-}
-p{
-    font-size: 0.9em;
-}
-
- }
