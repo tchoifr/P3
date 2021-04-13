@@ -5,7 +5,7 @@ $colour-bleu: #99E2D0;
 $colour-invalid: #2c2c2c;
 $colour-white: rgb(255, 255, 255);
 
-.localisation{
+.container1__localisation{
     background: $colour-secondary;
 }
 .bouton{
@@ -44,4 +44,9 @@ background: $colour-bleu;
     .lettre{
         color: $colour-bleu;
     }
+}
+a{
+    color: $colour-white; 
+    text-decoration: none;
+    
 }
