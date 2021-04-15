@@ -473,6 +473,10 @@ body {
   }
 }
 @media screen and (min-width: 430px) and (max-width: 1024px) {
+  #container2 {
+    width: 95%;
+  }
+
   .container3 {
     display: flex;
     flex-wrap: wrap;
