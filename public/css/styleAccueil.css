@@ -1,57 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@font-face {
-  font-family: "Shrikhand";
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/shrikhand/v6/a8IbNovtLWfR7T7bMJwrA4KR.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-.police-Shrikhand {
-  font-family: "Shrikhand";
-  font-style: normal;
-  font-weight: 400;
-}
-
-.lettre {
-  font-family: "Shrikhand";
-  font-style: normal;
-  font-weight: 400;
-}
-
-h1 {
-  font-family: "Shrikhand";
-  font-style: normal;
-  font-weight: 400;
-}
-
-h2 {
-  font-size: 0.9em;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 900;
-}
-
-p {
-  margin: 12px;
-  font-family: "Roboto", sans-serif;
-}
-
-.titre-bloc {
-  font-size: 1.8em;
-  width: 80%;
-}
-
-.gras {
-  font-weight: 700;
-  margin: 16px;
-}
-
-.titre-footer {
-  font-family: "Shrikhand";
-  font-style: normal;
-  font-weight: 400;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .container1__localisation {
   background: #eaeaea;
 }
@@ -113,6 +61,290 @@ a {
   color: gray;
 }
 
+@font-face {
+  font-family: "Shrikhand";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/shrikhand/v6/a8IbNovtLWfR7T7bMJwrA4KR.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+.police-Shrikhand {
+  font-family: "Shrikhand";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.lettre {
+  font-family: "Shrikhand";
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Shrikhand";
+  font-style: normal;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 0.9em;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+}
+
+p {
+  margin: 12px;
+  font-family: "Roboto", sans-serif;
+}
+
+.titre-bloc {
+  font-size: 1.8em;
+  width: 80%;
+}
+
+.gras {
+  font-weight: 700;
+  margin: 16px;
+}
+
+.titre-footer {
+  font-family: "Shrikhand";
+  font-style: normal;
+  font-weight: 400;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+    display: block;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    display: block;
+    transform: scale(1);
+  }
+  99% {
+    opacity: 0;
+    display: block;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    transform: scale(0);
+  }
+}
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    color: #99E2D0;
+    text-shadow: 0 0 7px #99E2D0;
+  }
+  70% {
+    color: #9356DC;
+    text-shadow: none;
+  }
+  100% {
+    color: #99E2D0;
+    text-shadow: 0 0 7px #99E2D0;
+  }
+}
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 5;
+  position: fixed;
+  animation: loader 2s ease-in;
+  transform: scale(0);
+}
+
+.lettre {
+  font-size: 80px;
+  letter-spacing: 10px;
+  margin-bottom: 0px;
+  animation: flash 1.2s linear infinite;
+}
+
+.lettre:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.lettre:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.lettre:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.lettre:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.lettre:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.lettre:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.lettre:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.lettre:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+@media screen and (min-width: 430px) and (max-width: 770px) {
+  .loader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 5;
+    position: fixed;
+    animation: loader 2s ease-in;
+    transform: scale(0);
+  }
+
+  .lettre {
+    color: #99E2D0;
+    font-size: 50px;
+    letter-spacing: 10px;
+    margin-bottom: 0px;
+    animation: flash 1.2s linear infinite;
+  }
+
+  .lettre:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  .lettre:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .lettre:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .lettre:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+
+  .lettre:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+
+  .lettre:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+
+  .lettre:nth-child(7) {
+    animation-delay: 0.7s;
+  }
+
+  .lettre:nth-child(8) {
+    animation-delay: 0.8s;
+  }
+}
+@media screen and (min-width: 310px) and (max-width: 430px) {
+  .loader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 5;
+    position: fixed;
+    animation: loader 2s ease-in;
+    transform: scale(0);
+  }
+
+  .lettre {
+    color: #99E2D0;
+    font-size: 30px;
+    letter-spacing: 10px;
+    margin-bottom: 0px;
+    animation: flash 1.2s linear infinite;
+  }
+
+  .lettre:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  .lettre:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .lettre:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .lettre:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+
+  .lettre:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+
+  .lettre:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+
+  .lettre:nth-child(7) {
+    animation-delay: 0.7s;
+  }
+
+  .lettre:nth-child(8) {
+    animation-delay: 0.8s;
+  }
+}
+/*
+    $prog-loader-dur: 500ms;
+$prog-loader-delay: 1000ms;
+$loader-delay: $prog-loader-dur + $prog-loader-delay;
+.loader {
+    animation: loader 2000ms $loader-delay;
+}
+@keyframes icon-loader{
+0% {
+     opacity: 0;
+      transform: rotateX(360deg);
+
+}
+100% {
+   opacity: 1;
+      transform: rotate(0);
+
+    }
+}
+*/
 body {
   margin: 0;
 }
@@ -882,236 +1114,5 @@ body {
     left: 18vw;
   }
 }
-@keyframes loader {
-  0% {
-    opacity: 1;
-    display: block;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 1;
-    display: block;
-    transform: scale(1);
-  }
-  99% {
-    opacity: 0;
-    display: block;
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    display: none;
-    transform: scale(0);
-  }
-}
-@keyframes fill {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes flash {
-  0% {
-    color: #99E2D0;
-    text-shadow: 0 0 7px #99E2D0;
-  }
-  70% {
-    color: #9356DC;
-    text-shadow: none;
-  }
-  100% {
-    color: #99E2D0;
-    text-shadow: 0 0 7px #99E2D0;
-  }
-}
-.loader {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  z-index: 5;
-  position: fixed;
-  animation: loader 2s ease-in;
-  transform: scale(0);
-}
 
-.lettre {
-  font-size: 80px;
-  letter-spacing: 10px;
-  margin-bottom: 0px;
-  animation: flash 1.2s linear infinite;
-}
-
-.lettre:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.lettre:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.lettre:nth-child(3) {
-  animation-delay: 0.3s;
-}
-
-.lettre:nth-child(4) {
-  animation-delay: 0.4s;
-}
-
-.lettre:nth-child(5) {
-  animation-delay: 0.5s;
-}
-
-.lettre:nth-child(6) {
-  animation-delay: 0.6s;
-}
-
-.lettre:nth-child(7) {
-  animation-delay: 0.7s;
-}
-
-.lettre:nth-child(8) {
-  animation-delay: 0.8s;
-}
-
-@media screen and (min-width: 430px) and (max-width: 770px) {
-  .loader {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    z-index: 5;
-    position: fixed;
-    animation: loader 2s ease-in;
-    transform: scale(0);
-  }
-
-  .lettre {
-    color: #99E2D0;
-    font-size: 50px;
-    letter-spacing: 10px;
-    margin-bottom: 0px;
-    animation: flash 1.2s linear infinite;
-  }
-
-  .lettre:nth-child(1) {
-    animation-delay: 0.1s;
-  }
-
-  .lettre:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-
-  .lettre:nth-child(3) {
-    animation-delay: 0.3s;
-  }
-
-  .lettre:nth-child(4) {
-    animation-delay: 0.4s;
-  }
-
-  .lettre:nth-child(5) {
-    animation-delay: 0.5s;
-  }
-
-  .lettre:nth-child(6) {
-    animation-delay: 0.6s;
-  }
-
-  .lettre:nth-child(7) {
-    animation-delay: 0.7s;
-  }
-
-  .lettre:nth-child(8) {
-    animation-delay: 0.8s;
-  }
-}
-@media screen and (min-width: 310px) and (max-width: 430px) {
-  .loader {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    z-index: 5;
-    position: fixed;
-    animation: loader 2s ease-in;
-    transform: scale(0);
-  }
-
-  .lettre {
-    color: #99E2D0;
-    font-size: 30px;
-    letter-spacing: 10px;
-    margin-bottom: 0px;
-    animation: flash 1.2s linear infinite;
-  }
-
-  .lettre:nth-child(1) {
-    animation-delay: 0.1s;
-  }
-
-  .lettre:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-
-  .lettre:nth-child(3) {
-    animation-delay: 0.3s;
-  }
-
-  .lettre:nth-child(4) {
-    animation-delay: 0.4s;
-  }
-
-  .lettre:nth-child(5) {
-    animation-delay: 0.5s;
-  }
-
-  .lettre:nth-child(6) {
-    animation-delay: 0.6s;
-  }
-
-  .lettre:nth-child(7) {
-    animation-delay: 0.7s;
-  }
-
-  .lettre:nth-child(8) {
-    animation-delay: 0.8s;
-  }
-}
-/*
-    $prog-loader-dur: 500ms;
-$prog-loader-delay: 1000ms;
-$loader-delay: $prog-loader-dur + $prog-loader-delay;
-.loader {
-    animation: loader 2000ms $loader-delay;
-}
-@keyframes icon-loader{
-0% {
-     opacity: 0;
-      transform: rotateX(360deg);
-
-}
-100% {
-   opacity: 1;
-      transform: rotate(0);
-
-    }
-}
-*/
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styleAccueil.css.map */
